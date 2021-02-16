@@ -1,0 +1,46 @@
+body{
+    background-color: #123456;
+    color: white;
+}
+#main{
+    height:720px;
+}
+
+#left{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 35%;
+    float: left;
+}
+
+#middle{
+    margin-top:20%;
+    font-size:12px;
+    text-align: center;
+    width:10%;
+    float: left;
+}
+
+#right{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 35%;
+    float: left;
+}
+
+.textForm{
+    background-color: rgb(73, 97, 105);
+    font-size: 1.1em;
+    width:100%;
+    padding:15px 10px;
+    line-height:140%;
+    resize:none;
+}
+
+input[type=range]{
+    width:100%;
+}
+
+h1, h3{
+    text-align: center;
+}

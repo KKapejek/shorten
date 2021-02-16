@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praca Inzynierska - Krzysztof Kasper</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">    
+    </head>
+    <body>
+        <div id="main">
+            <h1>APLIKACJA WEBOWA SŁUŻĄCA DO ANALIZY I SKRACANIA TEKSTÓW</h1>
+            <h3>Promotor: dr inż. Anna Bryniarksa</h3>
+            <h3>Pracę wykonał: Krzysztof KASPER, nr albumu: 95438</h3>
+            <div id="left">
+                Formularz wejscia<br>
+                <textarea form="input" name="inputText" id="inputText" class="textForm" rows="20" placeholder="Input your text here"></textarea>
+            </div>
+            <div id="middle">
+                <form method="post" action="/" id="input">
+                    <input type="range" value="4" min="2" max="6" name="range" id="range" oninput="this.nextElementSibling.value = this.value">
+                    Skrócić do <output>4</output> najważniejszych zdań.<br><br>
+                    <input type=submit value="Skróć">
+                </form>
+            </div>
+            <div id="right">
+                Wyjscie i wycena<br>
+                <textarea name="outputText" id="outputText" class="textForm" rows="20"></textarea>
+                Skrócono tekst o: <span id="reducedBy">0</span>%<br>
+                Najczestsze slowa: <span id="importantWords"></span><br>
+            </div>
+        </div>
+    </body>
+</html>
